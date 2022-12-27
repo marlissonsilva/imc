@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+:root{
+    --bg-body:#1a0730; 
+    --bg-container:#201926;
+}
+
+body {
+    background-color:var(--bg-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+
+
+.hide {
+    display: none !important;
+}
+
+.container {
+    min-width: 400px;
+    min-height: 400px;
+    background-color:var(--bg-container);
+    padding: 2rem;
+}
+
+/* #imc_form */
+#calc_container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form_inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.form_control label {
+    font-weight: bold;
+    margin-bottom: .6rem;
+    color:#FDE9FF;
+}
+
+.form_control input {
+    padding: 1rem .5rem;
+}
+
+.action_control {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+button {
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    background-color: #37BEAC;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.8;
+    flex: 1;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+#clear_btn {
+    background-color:#c00000d7;
+}
+
+/* table  */
+
+#result_container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#imc_number {
+    font-size: 2.4rem;
+    margin-bottom: .6rem;
+}
+
+#imc_info {
+    font-size: 1.4rem;
+    color: #ccc;
+}
+
+#result_container h3 {
+    margin-top: 1rem;
+    color: #dfdfdf;
+}
+
+#imc_table {
+    margin: 1.5rem 0;
+    font-size: 1rem;
+}
+
+.table_header {
+    font-weight: bold;
+    color: #ccc;
+}
+
+.table_header,
+.table_data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #444;
+}
+
+.table_header h4,
+.table_data p {
+    flex: 1;
+}
+
+.table_header h4:nth-child(3),
+.table_data p:nth-child(3) {
+    max-width: 80px;
+}
+
+#back_btn {
+    align-self: center;
+}
+
+/* classes de situacao */
+.good {
+    color: #12db34;
+}
+
+.low {
+    color: #dbce12;
+}
+
+.medium {
+    color: #db6212;
+}
+
+.high {
+    color: #db1912;
+}
